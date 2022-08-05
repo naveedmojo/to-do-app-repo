@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  color: whitesmoke;
+  outline: none;
+}
+body {
+  background: #ad5389; /* fallback for old browsers */
+
+  background: linear-gradient(
+    to left,
+    #3c1053,
+    #ad5389
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10vh;
+  padding: 0.5rem 1rem;
+  max-width: 800px;
+}
+.listitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h2 {
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-size: 40px;
+  padding: 0.5rem 0;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+.input-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+}
+label {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+#input {
+  flex-basis: 65%;
+  margin-left: 1rem;
+  padding: 0.7rem 0;
+  border-radius: 0.5rem;
+  background-color: ivory;
+  outline: none;
+  border: none;
+  color: black;
+  font-size: 18px;
+  padding-left: 0.5rem;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+#input:focus {
+  outline: #3c1053;
+  background-color: purple;
+  color: white;
+  border: black;
+}
+.listitem {
+  padding: 0.5rem 0;
+  margin: 0.7rem 0;
+  background: -webkit-linear-gradient(top left, #520c7c, #2e0475);
+  background: -moz-linear-gradient(top left, #520c7c, #2e0475);
+  background: linear-gradient(to bottom right, #520c7c, #2e0475);
+  border-radius: 0.5rem;
+}
+li {
+  font-size: 21px;
+  margin-left: 1rem;
+}
+.icons {
+  margin-right: 1.5rem;
+}
+.icons i {
+  padding: 5px;
+  font-size: 23px;
+  margin-right: 3px;
+}
+.trash:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.done:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.done.active {
+  color: lightgreen;
+}
+@media (max-width: 760px) {
+  .input-field {
+    flex-direction: column;
+  }
+  label {
+    font-size: 3vmax;
+    margin: 0.5rem o;
+  }
+  input[type='text'] {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+}
